@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  .markdown-content h2 * {
+    font-family: Plus Jakarta Sans, system-ui, sans-serif;
+  }
+} */
+/* Style for the markdown content */
+.markdown-content {
+  line-height: 1.5;
+}
+
+/* Style for headings */
+.markdown-content h1 {
+  font-size: 2.5rem;
+}
+
+/* .markdown-content h2 {
+    font-size: 2rem;
+  }
+   */
+.markdown-content h2 * {
+  font-size: 1.5rem;
+  color: #4f44e0 !important;
+  font-family: 
+  /* var(--font-plus_jakarta_sans); */ "Plus Jakarta Sans",
+    sans-serif;
+  font-style: normal;
+}
+
+.markdown-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0e0b3d;
+}
+
+.markdown-content h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.markdown-content h6 {
+  font-size: 1rem;
+}
+
+/* Style for paragraphs */
+.markdown-content p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0e0b3d;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+/* Style for links */
+.markdown-content a {
+  color: #0077c0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+
+/* Style for lists */
+.markdown-content ul,
+.markdown-content ol {
+  margin-bottom: 1rem;
+  padding-inline-start: 18px;
+}
+
+.markdown-content li {
+  margin-left: 0rem;
+}
+
+/* Style for code blocks */
+.markdown-content pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.markdown-content code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Style for inline code */
+.markdown-content p code {
+  background-color: #f4f4f4;
+  padding: 0.25rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Style for blockquotes */
+.markdown-content blockquote {
+  border-left: 5px solid #ccc;
+  margin-left: 0;
+  padding-left: 1rem;
+}
+
+/* Style for images */
+.markdown-content img {
+  max-width: 100%;
+}
